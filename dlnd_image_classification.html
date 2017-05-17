@@ -12631,10 +12631,6 @@ Keep Prob Tests Passed.
     <span class="n">x</span> <span class="o">=</span> <span class="n">conv2d_maxpool</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">conv2d_maxpool</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
     
-    <span class="c1">#x = conv2d_maxpool(x, 32, (3, 3), (1, 1), (2, 2), (2, 2))</span>
-    <span class="c1">#x = conv2d_maxpool(x, 32, (3, 3), (2, 2), (2, 2), (2, 2))</span>
-    <span class="c1">#x = conv2d_maxpool(x, 64, (3, 3), (1, 1), (2, 2), (2, 2))</span>
-
         <span class="c1"># TODO: Apply a Flatten Layer</span>
         <span class="c1"># Function Definition from Above:</span>
         <span class="c1">#   flatten(x_tensor)</span>
@@ -12644,10 +12640,7 @@ Keep Prob Tests Passed.
         <span class="c1">#    Play around with different number of outputs</span>
         <span class="c1"># Function Definition from Above:</span>
         <span class="c1">#   fully_conn(x_tensor, num_outputs)</span>
-    <span class="c1">#x = fully_conn(x, 512)</span>
-    <span class="c1">#x = tf.nn.dropout(x, keep_prob)</span>
-    <span class="c1">#x = fully_conn(x, 128)</span>
-    <span class="c1">#x = tf.nn.dropout(x, keep_prob)</span>
+
     <span class="n">x</span> <span class="o">=</span> <span class="n">fully_conn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">512</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">dropout</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">fully_conn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span>
